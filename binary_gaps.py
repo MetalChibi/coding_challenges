@@ -1,8 +1,4 @@
-# you can write to stdout for debugging purposes, e.g.
-# print("this is a debug message")
-
-def solution(N):
-    # write your code in Python 3.6
+def binary_gaps(N):
     x = []
     binary = str(bin(N)[2:]).split("1")
     for i in binary[:-1]:
@@ -15,5 +11,4 @@ def solution(N):
         return max(x)
 
 
-
-print(solution(6291457))
+print(binary_gaps(6291457))
